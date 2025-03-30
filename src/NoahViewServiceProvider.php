@@ -17,6 +17,7 @@ class NoahViewServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('noah-view')
+            ->hasRoute('web')
             ->hasConfigFile()
             ->hasViews()
             ->hasCommands([
