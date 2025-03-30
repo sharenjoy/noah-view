@@ -19,7 +19,8 @@ class NoahViewServiceProvider extends PackageServiceProvider
             ->name('noah-view')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_noah_view_table')
-            ->hasCommand(NoahViewCommand::class);
+            ->hasCommands([
+                // NoahViewCommand::class
+            ]);
     }
 }
